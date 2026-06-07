@@ -490,95 +490,87 @@ textarea {
 
 /* 當螢幕寬度小於或等於375時執行 */
 @media (max-width: 375px) {
-  .col-md-12{
+.col-md-12{
   --span: 12;
   --gap-count: calc(var(--span) - 1);
   width: calc(
     (100% - var(--gutter) * (var(--column) - 1)) / var(--column) * var(--span) +
       var(--gutter) * var(--gap-count)
   );
-  }
+}
 
-  .d-md-block {
-    display: block;
-  }
+.d-md-block {
+ display: block;
+}
 
-  .d-md-none {
+.d-md-none {
     display: none;
-  }
+}
  
-  .label-mobile-sm {
-    font-size: 14px;
-    font-weight: 500;
-  }
-
-  .w-md-full {
+.w-md-full {
   width: 100%;
-  }
+}
 
-  .min-h-0 {
-    min-height: 0px;
-  }
+.min-h-0 {
+  min-height: 0px;
+}
 
-
-
-  .flex-md-col {
+.flex-md-col {
     flex-direction: column;
-  }
-
-  .order-md-1 {
-    order: 1;
-  }
-
-  .order-md-2 {
-    order: 2;
-  }
-
-  .heading-mobile-xl {
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 1.2;
-  }
-  .paragraph-mobile-sm {
-    font-size: 14px;
-    font-weight: 500;
-  }
-  .mb-md-12 {
-    margin-bottom: 12px;
-  }
-  .mb-md-32 {
-    margin-bottom: 32px;
-  }
- .mr-md-12 {
-    margin-right: 12px;
-  }
-  .py-md-24 {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .heading-mobile-xxxxs {
-  font-size: 14px;
-  font-weight: 700;
-}
-  .heading-mobile-sm {
-  font-size: 24px;
-  font-weight: 700;
-}
- .text-md-24 {
-  font-size: 24px;
 }
 
- .text-md-20 {
-  font-size: 20px;
+.order-md-1 {
+  order: 1;
 }
-  .services-card .card {
-    min-width: 260px;
-  }
 
-  .py-md-12 {
+.order-md-2 {
+  order: 2;
+}
+
+.mb-md-8 {
+  margin-bottom: 8px;
+}
+
+.mb-md-12 {
+  margin-bottom: 12px;
+}
+
+.mb-md-24 {
+  margin-bottom: 24px;
+}
+
+.mb-md-32 {
+
+  margin-bottom: 32px;
+}
+.mr-md-8 {
+  margin-right: 8px;
+} 
+
+.mr-md-12 {
+  margin-right: 12px;
+}
+
+.p-md-24 {
+  padding: 24px;
+}
+.py-md-8 {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.py-md-12 {
   padding-top: 12px;
   padding-bottom: 12px;
+}
+.py-md-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-md-40 {
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .px-md-12 {
@@ -586,13 +578,78 @@ textarea {
   padding-left: 12px;
 }
 
-.mb-md-8 {
-  margin-bottom: 8px;
+.px-md-16 {
+  padding-right: 16px;
+  padding-left: 16px;
 }
+.px-md-20 {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.pl-12 {
+  padding-left: 12px;
+}
+
+.text-md-24 {
+  font-size: 24px;
+}
+
+.text-md-20 {
+  font-size: 20px;
+}
+
+.services-card .card {
+  min-width: 260px;
+}
+
+.gap-md-4 {
+  gap: 4px;
+}
+
 
 .gap-md-8 {
   gap: 8px;
 }
 
+.gap-md-12 {
+  gap: 12px;
+}
+
+.heading-mobile-xl {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.heading-mobile-sm {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.heading-mobile-xs {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.heading-mobile-xxxxs {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.label-mobile-sm {
+font-size: 14px;
+font-weight: 500;
+}
+
+.paragraph-mobile-sm {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.paragraph-mobile-xs {
+  font-size: 13px;
+  font-weight: 500;
+}
 
 }
