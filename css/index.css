@@ -1,0 +1,93 @@
+.nav-list {
+    display: flex;
+  }
+
+.contact-input-half {
+    --gap:24px;
+    width: calc((100% - var(--gap))/2);
+} 
+
+/*hero區塊樣式*/
+.hero{
+    height:calc(100vh - 64px);
+}
+
+
+.projects-card-1 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_1.png?raw=true");     
+}
+
+.projects-card-2 {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_2.png?raw=true");
+  }
+
+.projects-card-3 {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/project_3.png?raw=true");
+  }
+
+.project-content {
+  max-width: 386px;
+}
+
+.Subscription-card {
+  position: relative;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+   &::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--color-dark-60a);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+   }
+}
+
+.Subscription-card .container {
+  position: relative; /* 💡 必須先設定定位，z-index 才會生效 */
+  z-index: 2;        /* 💡 數字大於遮罩，讓內容跳到最前方 */
+}
+
+@media (max-width:375px){
+
+    .hero{
+    height:calc(100vh - 68px);
+}
+    /*行動裝置預設關閉*/
+    .nav-list {
+        display: none;
+    }
+    /*行動裝置開啟狀態*/
+    .nav-list.active {
+        padding: 12px 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0px;
+        background-color: var(--color-primary-50);
+        width: 100%;
+        text-align: center;
+        gap: 12px;
+    }
+    
+    body.menu-open {
+        overflow: hidden;
+    }
+
+    body.menu-open .mask {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: var(--color-dark-60a);
+    }
+
+}
