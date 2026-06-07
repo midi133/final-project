@@ -12,7 +12,6 @@
 }
 }
 
-
 /*hero區塊樣式*/
 .hero{
     height:calc(100vh - 64px);
@@ -90,9 +89,11 @@
 
 @media (max-width:375px){
 
-    .hero{
+.hero{
     height:calc(100vh - 68px);
 }
+
+
     /*行動裝置預設關閉*/
     .nav-list {
         display: none;

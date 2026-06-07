@@ -502,11 +502,11 @@ textarea {
 }
 
 .d-md-block {
- display: block;
+  display: block;
 }
 
 .d-md-none {
-    display: none;
+  display: none;
 }
  
 .w-md-full {
@@ -518,7 +518,7 @@ textarea {
 }
 
 .flex-md-col {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 .order-md-1 {
