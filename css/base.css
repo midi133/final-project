@@ -482,6 +482,9 @@ textarea {
   position: sticky;
 }*/
 
+.overflow-x-auto {
+  overflow-x: auto;
+}
 
 
 
