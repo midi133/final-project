@@ -6,6 +6,12 @@
     --gap:24px;
     width: calc((100% - var(--gap))/2);
 } 
+@media (max-width: 375px) {
+.contact-input {
+  width: 100%;
+}
+}
+
 
 /*hero區塊樣式*/
 .hero{
@@ -57,9 +63,7 @@
 
 }
 
-
-
-.Subscription-card {
+.subscription-card {
   position: relative;
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/subscription_bg.png?raw=true");
   background-repeat: no-repeat;
@@ -79,7 +83,7 @@
    }
 }
 
-.Subscription-card .container {
+.subscription-card .container {
   position: relative; /* 💡 必須先設定定位，z-index 才會生效 */
   z-index: 2;        /* 💡 數字大於遮罩，讓內容跳到最前方 */
 }
@@ -124,4 +128,18 @@
     min-width: 260px;
   }
 
+  .flex-md-col {
+    flex-direction: column;
+  }
+
+  .col-5, .col-7 {
+  width: 100%;
+ }
+
+ .subscription-card {
+  position: relative;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/subscription_bg.png?raw=true");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
 }

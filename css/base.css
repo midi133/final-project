@@ -451,6 +451,8 @@ textarea {
   color: var(--color-neutral-0);
 }
 
+
+
 .rounded-40 {
   border-radius: 40px ;
 }
@@ -550,6 +552,9 @@ textarea {
 .mr-md-12 {
   margin-right: 12px;
 }
+.ml-md-12 {
+  margin-left: 12px;
+}
 
 .p-md-24 {
   padding: 24px;
@@ -563,6 +568,11 @@ textarea {
   padding-top: 12px;
   padding-bottom: 12px;
 }
+
+.py-md-16 {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
 .py-md-24 {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -571,6 +581,11 @@ textarea {
 .py-md-40 {
   padding-top: 40px;
   padding-bottom: 40px;
+}
+
+.px-md-0 {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 .px-md-12 {
@@ -602,6 +617,9 @@ textarea {
 .services-card .card {
   min-width: 260px;
 }
+.gap-md-0 {
+ gap: 0;
+}
 
 .gap-md-4 {
   gap: 4px;
@@ -615,6 +633,11 @@ textarea {
 .gap-md-12 {
   gap: 12px;
 }
+
+.rounded-md-32 {
+  border-radius: 32px;
+}
+
 
 .heading-mobile-xl {
   font-size: 40px;
