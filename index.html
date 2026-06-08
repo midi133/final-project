@@ -10,41 +10,43 @@
     <link rel="stylesheet" href="./css/reset.css"> 
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/index.css">
-    <title>Document</title>
+    <title>Nelson</title>
 
 </head>
 
 <body>
     <!--遮罩使用-->
-    <div class="mask"></div>
+    <div class="mask z-1"></div>
    
 
     <!--頁首區域-->
-    <header class="bg-primary-50 sticky-top z-3">
-        <nav>
+    <header class="sticky-top z-1">
+        <nav class="bg-primary-50 py-12 py-md-8 main-nav">
             <div class="container">
-                <div class="d-flex py-12 align-items-center">
-                  <!--網站圖示-->
-                  <a href="#">
-                     <picture>
-                     <source srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-mobile.svg
-                    " media="(max-width: 375px)" />
-              <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-pc.svg" alt="Nelson的log" />
-            </picture>
-                  </a>
+                <div class="col-12 d-flex align-items-center">
 
-                  <!--行動版(漢堡按鈕)-->
-                  <button class="menu- d-none d-md-block ml-auto p-12" type="button">
-                    <span class="material-symbols-outlined">dehaze</span>
-                  </button>
+                  <!--網站圖示-->
+                  <a href="index.html">
+                    <picture>
+                    <source srcset="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-mobile.svg
+                    " media="(max-width: 375px)" />
+                    <img src="https://raw.githubusercontent.com/hexschool/2022-web-layout-training/456698ad0b642710162489555e98fd3b15eb49ff/2026-web-camp/device-pc.svg" alt="Nelson的log" />
+                    </picture>
+                  </a>
+                
 
                   <!--導覽列清單-->
-                  <ul class="nav-list label-mobile-sm ml-auto d-flex label-md text-neutral-700 gap-24 align-items-center">
-                    <li class="w-md-full"><a class="py-4 px-12" href="#">服務項目</a></li>
-                    <li class="w-md-full"><a class="py-4 px-12" href="#">專案作品</a></li>
-                    <li class="w-md-full"><a class="py-4 px-12" href="#">部落格</a></li>
-                    <li class="w-md-full"><a class="py-4 px-12" href="#">與我聯絡</a></li>
+                  <ul class="d-flex d-md-none label-md text-neutral-700 py-4 ml-auto nav-list ">
+                    <li><a class="py-4 px-12" href="#">服務項目</a></li>
+                    <li><a class="py-4 px-12" href="#">專案作品</a></li>
+                    <li><a class="py-4 px-12" href="#">部落格</a></li>
+                    <li><a class="py-4 px-12" href="#">與我聯絡</a></li>
                   </ul>
+
+                  <!--行動版(漢堡按鈕)-->
+                  <button class="d-none d-md-block ml-auto p-12 menu-btn" type="button">
+                    <span class="material-symbols-outlined">dehaze</span>
+                  </button>
                 </div>
             </div>
         </nav>
@@ -52,11 +54,11 @@
     
     
     <!--Hero區域-->
-    <section class="hero bg-primary-50">
+    <section class="hero bg-primary-50 ">
         <div class="container h-full">
-        <div class="d-flex text-neutral-700 flex-md-col py-md-24 h-full">
+        <div class="d-flex text-neutral-700 flex-md-col h-full">
 
-            <div class="col-5 m-auto col-md-12 order-md-2 py-md-24">
+            <div class="col-5 m-auto col-md-12 order-md-2">
                 <!--標題-->
                 <h1 class="mb-24 heading-xxxl heading-mobile-xl mb-md-12"> 
                 <span class="d-block">Hello</span>
@@ -226,7 +228,7 @@
                 </h2>
                 <button class="ml-auto btn-outline label-md py-12 px-24 rounded-full label-mobile-sm" type="button">探索更多</button>
             </div>
-            <ul class="d-flex gap-24 overflow-x-auto gap-md-12">
+            <ul class="d-flex gap-24 overflow-x-auto hide-scrollbar gap-md-12">
                 <li class="col-4 blogs-card">
                     <div class="mb-12 mb-md-8">
                         <img src="https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/blog_2.png?raw=true" alt="10年職人手記部落格封面">

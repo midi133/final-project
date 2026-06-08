@@ -185,19 +185,11 @@
   font-weight: 500;
 }
 
-/*helper樣式*/
-.sticky-top {
-  position: sticky;
-  top: 0px;
-  left: 0px;
-}
-
 .object-fit-cover {
   width: 100%;
   height: 100%;
   object-fit: cover;
   display: block;
-
 }
 
 body {
@@ -238,6 +230,7 @@ button {
   color: inherit;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 textarea {
@@ -262,6 +255,46 @@ textarea {
 
 .d-flex {
   display: flex;
+}
+.w-full {
+  width: 100%;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-3 {
+  z-index: 3;
+}
+
+.relative {
+  position: relative;
+}
+
+/*.sticky {
+  position: sticky;
+}*/
+
+.overflow-x-auto {
+  overflow-x: auto;
+}
+
+/* 隱藏捲軸寬度 */
+.hide-scrollbar {
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none; /* Safari 專用 */
+  }
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.m-auto {
+  margin: auto;
 }
 
 .ml-auto {
@@ -292,6 +325,39 @@ textarea {
   margin-bottom: 92px;
 }
 
+.mr-4 {
+  margin-right: 4px;
+}
+
+.mr-12 {
+  margin-right: 12px;
+}
+
+.mr-24 {
+  margin-right: 24px;
+}
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.p-8 {
+  padding: 8px;
+}
+
+.p-12 {
+  padding: 12px;
+}
+
+.p-40 {
+  padding: 40px;
+}
+
+.py-4 {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
 .py-12 {
   padding-top: 12px;
   padding-bottom: 12px;
@@ -300,6 +366,21 @@ textarea {
 .py-20 {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.py-24 {
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.py-28 {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.py-80 {
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
 
 .px-12 {
@@ -322,65 +403,6 @@ textarea {
   padding-left: 40px;
 }
 
-.p-8 {
-  padding: 8px;
-}
-
-.p-12 {
-  padding: 12px;
-}
-
-.p-40 {
-  padding: 40px;
-}
-
-.w-full {
-  width: 100%;
-}
-.text-center {
-  text-align: center;
-}
-
-.py-4 {
-  padding-top: 4px;
-  padding-bottom: 4px;
-}
-
-.py-24 {
-  padding-top: 24px;
-  padding-bottom: 24px;
-}
-
-.py-28 {
-  padding-top: 28px;
-  padding-bottom: 28px;
-}
-
-.py-80 {
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
-
-.align-items-center {
-  align-items: center;
-}
-
-.justify-content-center {
-  justify-content: center;
-}
-
-.gap-8 {
-  gap: 8px;
-}
-
-.gap-12 {
-  gap: 12px;
-}
-
-.gap-24 {
-  gap: 24px;
-}
-
 .pr-16 {
   padding-right: 16px;
 }
@@ -395,25 +417,30 @@ textarea {
   padding-left: 32px;
 }
 
-.mr-4 {
-  margin-right: 4px;
+.gap-8 {
+  gap: 8px;
 }
 
-.mr-12 {
-  margin-right: 12px;
+.gap-12 {
+  gap: 12px;
 }
 
-.mr-24 {
-  margin-right: 24px;
+.gap-24 {
+  gap: 24px;
 }
 
-.mt-24 {
-  margin-top: 24px;
+.text-center {
+  text-align: center;
 }
 
-.m-auto {
-  margin: auto;
+.align-items-center {
+  align-items: center;
 }
+
+.justify-content-center {
+  justify-content: center;
+}
+
 .text-20 {
   font-size: 20px;
 }
@@ -423,6 +450,22 @@ textarea {
 .text-28 {
   font-size: 28px;
 }
+.rounded-40 {
+  border-radius: 40px ;
+}
+
+.rounded-full {
+  border-radius: 1000px ;
+}
+
+.btn-outline {
+  border: 1px solid currentColor;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
 
 .bg-neutral-0 {
   background-color: var(--color-neutral-0);
@@ -449,43 +492,6 @@ textarea {
 }
 .text-neutral-0 {
   color: var(--color-neutral-0);
-}
-
-
-
-.rounded-40 {
-  border-radius: 40px ;
-}
-
-.rounded-full {
-  border-radius: 1000px ;
-}
-
-.btn-outline {
-  border: 1px solid currentColor;
-}
-
-.line-height-1 {
-  line-height: 1;
-}
-
-.flex-wrap {
-  flex-wrap: wrap;
-}
-.z-3 {
-  z-index: 3;
-}
-
-.relative {
-  position: relative;
-}
-
-/*.sticky {
-  position: sticky;
-}*/
-
-.overflow-x-auto {
-  overflow-x: auto;
 }
 
 
@@ -559,6 +565,7 @@ textarea {
 .p-md-24 {
   padding: 24px;
 }
+
 .py-md-8 {
   padding-top: 8px;
   padding-bottom: 8px;
@@ -606,17 +613,6 @@ textarea {
   padding-left: 12px;
 }
 
-.text-md-24 {
-  font-size: 24px;
-}
-
-.text-md-20 {
-  font-size: 20px;
-}
-
-.services-card .card {
-  min-width: 260px;
-}
 .gap-md-0 {
  gap: 0;
 }
@@ -624,7 +620,6 @@ textarea {
 .gap-md-4 {
   gap: 4px;
 }
-
 
 .gap-md-8 {
   gap: 8px;
@@ -634,10 +629,17 @@ textarea {
   gap: 12px;
 }
 
+.text-md-24 {
+  font-size: 24px;
+}
+
+.text-md-20 {
+  font-size: 20px;
+}
+
 .rounded-md-32 {
   border-radius: 32px;
 }
-
 
 .heading-mobile-xl {
   font-size: 40px;
