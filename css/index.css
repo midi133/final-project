@@ -50,7 +50,26 @@ background-color: var(--color-dark-60a);
 /*hero區塊樣式*/
 .hero {
   min-height: calc(100vh - 64px);  /*桌機版扣除導覽列高度*/
+  display: flex; /* ➔ 新增這行，激活子元素的高度繼承 */
+  flex-direction: column; /* ➔ 確保直向延伸 */
 }
+
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+.hero {
+  min-height: auto;      /* 行動版由內容自然撐開，避免內容溢出 */
+  padding: 40px 0;       /* 用 padding 給予上下呼吸空間 */
+}
+
+.col-5, .col-7 {
+  width: 100%;
+}
+}
+
 
 @media (max-width:375px){
 .hero{
