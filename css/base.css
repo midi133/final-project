@@ -494,6 +494,34 @@ textarea {
   color: var(--color-neutral-0);
 }
 
+/* 當螢幕寬度小於或等於767時執行 */
+
+
+@media (max-width: 767px) {
+/*
+  .col-md-12{
+  --span: 12;
+  --gap-count: calc(var(--span) - 1);
+  width: calc(
+    (100% - var(--gutter) * (var(--column) - 1)) / var(--column) * var(--span) +
+      var(--gutter) * var(--gap-count)
+  );
+}
+*/
+
+.flex-md-col {
+  flex-direction: column;
+}
+/* 調整顯示順序 */
+.order-md-1 {
+  order: 1;
+}
+
+.order-md-2 {
+  order: 2;
+}
+
+}
 
 
 /* 當螢幕寬度小於或等於375時執行 */
