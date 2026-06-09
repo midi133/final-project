@@ -54,11 +54,6 @@ background-color: var(--color-dark-60a);
   flex-direction: column; /* ➔ 確保直向延伸 */
 }
 
-.hero img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 @media (max-width: 767px) {
 .hero {
   min-height: auto;      /* 行動版由內容自然撐開，避免內容溢出 */
