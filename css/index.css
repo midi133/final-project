@@ -48,13 +48,13 @@ background-color: var(--color-dark-60a);
 
 
 /*hero區塊樣式*/
-.hero{
-  height:calc(100vh - 64px);
+.hero {
+  min-height: calc(100vh - 64px);  /*桌機版扣除導覽列高度*/
 }
 
 @media (max-width:375px){
 .hero{
-    height:calc(100vh - 68px);
+  min-height: calc(100vh - 60px);
 }
 
 .col-5, .col-7 {
