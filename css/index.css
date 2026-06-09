@@ -53,11 +53,11 @@ background-color: var(--color-dark-60a);
   display: flex; /* ➔ 新增這行，激活子元素的高度繼承 */
   flex-direction: column; /* ➔ 確保直向延伸 */
 }
+
 /* 當螢幕寬度小於或等於767時執行 */
 @media (max-width: 767px) {
 .hero {
   min-height: auto;      /* 行動版由內容自然撐開，避免內容溢出 */
-  /*padding: 40px 0; */      /* 用 padding 給予上下呼吸空間 */
 }
 
 .col-5, .col-7 {
@@ -78,6 +78,39 @@ background-color: var(--color-dark-60a);
   width: 100%;
 }
 }
+
+/*hero裝飾*/
+.decorate-1 {
+  position: absolute;
+  top: 97px;
+  left: -81px;
+}
+
+.decorate-2 {
+  position: absolute;
+  bottom: 87px;
+  right: -80px;
+}
+
+/* 當螢幕寬度小於或等於767時執行 */
+@media (max-width: 767px) {
+.decorate-1 {
+  top: 26px;
+  left: -27px;
+  width: 80px;
+  height: 79px;
+  }
+
+  .decorate-2 {
+  top: 274px;
+  right: -25px;
+  width: 80px;
+  height: 69px;
+  }
+
+}
+
+
 
 /* 當螢幕寬度小於或等於767時執行 */
 /*Services區域*/
