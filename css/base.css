@@ -498,7 +498,6 @@ textarea {
 
 
 @media (max-width: 767px) {
-/*
   .col-md-12{
   --span: 12;
   --gap-count: calc(var(--span) - 1);
@@ -507,7 +506,7 @@ textarea {
       var(--gutter) * var(--gap-count)
   );
 }
-*/
+
 
 .flex-md-col {
   flex-direction: column;
