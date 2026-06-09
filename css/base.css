@@ -529,7 +529,7 @@ textarea {
 
 
 /* 當螢幕寬度小於或等於375時執行 */
-@media (max-width: 375px) {
+@media (max-width: 767px) {
 .col-md-12{
   --span: 12;
   --gap-count: calc(var(--span) - 1);
