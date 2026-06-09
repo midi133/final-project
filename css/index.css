@@ -57,7 +57,7 @@ background-color: var(--color-dark-60a);
 @media (max-width: 767px) {
 .hero {
   min-height: auto;      /* 行動版由內容自然撐開，避免內容溢出 */
-  padding: 40px 0;       /* 用 padding 給予上下呼吸空間 */
+  /*padding: 40px 0; */      /* 用 padding 給予上下呼吸空間 */
 }
 
 .col-5, .col-7 {
