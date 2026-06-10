@@ -292,6 +292,10 @@ textarea {
   flex-wrap: wrap;
 }
 
+.flex-1{
+  flex: 1;
+}
+
 .m-auto {
   margin: auto;
 }
