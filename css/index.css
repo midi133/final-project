@@ -50,9 +50,9 @@ background-color: var(--color-dark-60a);
 /*hero區塊樣式*/
 .hero {
   min-height: calc(100vh - 64px);  /*桌機版扣除導覽列高度*/
-  display: flex; /* ➔ 新增這行，激活子元素的高度繼承 */
-  flex-direction: column; /* ➔ 確保直向延伸 */
+  overflow: hidden; /*防止絕對定位的裝飾物撐開網頁總寬度*/
 }
+
 
 /* 當螢幕寬度小於或等於767時執行 */
 @media (max-width: 767px) {
@@ -92,6 +92,41 @@ background-color: var(--color-dark-60a);
   right: -80px;
 }
 
+.decorate-3 {
+  position: absolute;
+  
+  &.flower-lt {
+    left: -226px;
+    top: 56px;
+  }
+
+  &.flower-lb {
+    width: 80px;
+    height: 80px;
+    left: 391px;
+    bottom: 192px;
+  }
+
+  &.flower-rt {
+    right: -170px;
+    top: 206px;
+  }
+}
+
+.decorate-4 {
+  position: absolute;
+  top: 120px;
+  left: -87px;
+}
+
+.decorate-5 {
+  position: absolute;
+  left: 211px;
+  bottom: 83px; 
+}
+
+
+
 /* 當螢幕寬度小於或等於767時執行 */
 @media (max-width: 767px) {
 .decorate-1 {
@@ -106,6 +141,22 @@ background-color: var(--color-dark-60a);
   right: -25px;
   width: 80px;
   height: 69px;
+  }
+
+  .decorate-3 {
+  &.flower-lb {
+  width: 80px;
+  height: 80px;
+  left: 249px;
+  bottom: 182.41px;
+  }
+  }
+
+  .decorate-6 {
+  position: absolute;
+  display: block;
+  top: 398.41px;
+  left: 134.5px;
   }
 
 }
