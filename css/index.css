@@ -237,7 +237,6 @@ background-color: var(--color-dark-60a);
    }
 }
 
-
 /* 當螢幕寬度小於或等於992時執行 */
 @media (max-width:992px){
   .subscription-card {
