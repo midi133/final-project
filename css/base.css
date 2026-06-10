@@ -497,9 +497,11 @@ textarea {
   color: var(--color-neutral-0);
 }
 
+.focus-outline-0:focus-visible {
+  outline: 0;
+}
+
 /* 當螢幕寬度小於或等於992時執行 */
-
-
 @media (max-width: 992px) {
   .col-md-12{
   --span: 12;
