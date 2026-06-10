@@ -9,7 +9,7 @@
 display: flex;
 }
 
-@media (max-width:767px){
+@media (max-width:992px){
 .nav-list {            /*行動裝置預設關閉*/
   display: none;
 }
@@ -54,8 +54,8 @@ background-color: var(--color-dark-60a);
 }
 
 
-/* 當螢幕寬度小於或等於767時執行 */
-@media (max-width: 767px) {
+/* 當螢幕寬度小於或等於992時執行 */
+@media (max-width: 992px) {
 .hero {
   min-height: auto;      /* 行動版由內容自然撐開，避免內容溢出 */
 }
@@ -127,8 +127,8 @@ background-color: var(--color-dark-60a);
 
 
 
-/* 當螢幕寬度小於或等於767時執行 */
-@media (max-width: 767px) {
+/* 當螢幕寬度小於或等於992時執行 */
+@media (max-width: 992px) {
 .decorate-1 {
   top: 26px;
   left: -27px;
@@ -163,9 +163,9 @@ background-color: var(--color-dark-60a);
 
 
 
-/* 當螢幕寬度小於或等於767時執行 */
+/* 當螢幕寬度小於或等於992時執行 */
 /*Services區域*/
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 .services-card .card {
   min-width: 260px;
 }
@@ -190,8 +190,8 @@ background-color: var(--color-dark-60a);
 .project-content {
   max-width: 386px;
 }
-/* 當螢幕寬度小於或等於767時執行 */
-@media (max-width: 767px) {
+/* 當螢幕寬度小於或等於992時執行 */
+@media (max-width: 992px) {
 .projects-card-1 {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/project_1.png?raw=true");
 }
@@ -210,8 +210,8 @@ background-color: var(--color-dark-60a);
 }
 
 /*Blogs區域*/
-/* 當螢幕寬度小於或等於767時執行 */
-@media (max-width: 767px) {
+/* 當螢幕寬度小於或等於992時執行 */
+@media (max-width: 992px) {
 .blogs-card {
   min-width: 260px;
 }
@@ -243,8 +243,8 @@ background-color: var(--color-dark-60a);
   position: relative; /* 💡 必須先設定定位，z-index 才會生效 */
   z-index: 2;        /* 💡 數字大於遮罩，讓內容跳到最前方 */
 }
-/* 當螢幕寬度小於或等於767時執行 */
-@media (max-width:767px){
+/* 當螢幕寬度小於或等於992時執行 */
+@media (max-width:992px){
   .subscription-card {
   position: relative;
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/2026-web-camp/mobile/subscription_bg.png?raw=true");
@@ -259,7 +259,7 @@ background-color: var(--color-dark-60a);
   --gap:24px;
   width: calc((100% - var(--gap))/2);
 } 
-@media (max-width: 767px) {
+@media (max-width: 992px) {
 .contact-input {
   width: 100%;
 }
